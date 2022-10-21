@@ -8,7 +8,6 @@ namespace WebApiONG.Services
     public class AnimalServices
     {
         private readonly IMongoCollection<Animal> _animals;
-        //private readonly IMongoCollection<Address> _address;
 
         public AnimalServices(IDatabaseSettings settings)
         {
