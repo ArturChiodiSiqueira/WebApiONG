@@ -39,6 +39,7 @@ namespace WebApiONG
             services.AddSingleton<IDatabaseSettings>(sp => sp.GetRequiredService<IOptions<DatabaseSettings>>().Value);
 
             services.AddSingleton<AnimalServices>();
+            services.AddSingleton<PersonServices>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
